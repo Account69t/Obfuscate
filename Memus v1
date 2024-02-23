@@ -642,14 +642,14 @@ function lapse()
     for i,v in pairs(game.Workspace.Entities:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (hitbox1.Position - v.HumanoidRootPart.Position).Magnitude < 100 then
-            rs.Damage:FireServer(v.Humanoid, v.HumanoidRootPart.CFrame, 0.1, 0.25, (hitbox1.Position - player.Character.Humanoid.RootPart.Position).Unit * 20, "rbxassetid://241837157", 0, Color3.new(100, 100, 255), "rbxassetid://12222058", 0.4, 0)
+            rs.Damage:FireServer(v.Humanoid, v.HumanoidRootPart.CFrame, 0.1, 0.25, (hitbox1.Position - v.Humanoid.RootPart.Position).Unit * 30, "rbxassetid://241837157", 0, Color3.new(100, 100, 255), "rbxassetid://12222058", 0.4, 0)
             end
         end
     end
     for i,v in pairs(game.Workspace.Entities:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (hitbox1.Position - v.HumanoidRootPart.Position).Magnitude < 30 then
-            rs.Damage:FireServer(v.Humanoid, v.HumanoidRootPart.CFrame, 190, 0.25, (hitbox1.Position - player.Character.Humanoid.RootPart.Position).Unit * 20, "rbxassetid://241837157", 0, Color3.new(100, 100, 255), "rbxassetid://12222058", 0.4, 0)
+            rs.Damage:FireServer(v.Humanoid, v.HumanoidRootPart.CFrame, 190, 0.25, (hitbox1.Position - v.Humanoid.RootPart.Position).Unit * 10, "rbxassetid://241837157", 0, Color3.new(100, 100, 255), "rbxassetid://12222058", 0.4, 0)
             end
         end
     end
