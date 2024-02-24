@@ -952,3 +952,15 @@ for index, Value in pairs(game.Lighting:GetChildren()) do
 		end)
 	end
 end
+
+l.TS.Changed:Connect(function()
+    if l.TS.Value == true then
+        if death == true then return end
+        if powerup == false then
+            rs.RTZ:FireServer(true)
+            rs.RTZEffect:FireServer(true)
+            wait(0.1)
+            rs.RTZ:FireServer(false)
+        end
+    end
+end)
