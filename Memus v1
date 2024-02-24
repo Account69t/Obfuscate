@@ -415,8 +415,8 @@ rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoi
 rs.VampireRush:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, poffset), 0.1, 0, Vector3.new(),"rbxassetid://3370684035", psize, Color3.new(10, 10, 105), "rbxassetid://", 1, 0.5)
 rser.Heartbeat:wait()
 end
-for i = 1,70 do
-rser.Heartbeat:wait()
+for i = 1,45 do
+wait()
 rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoid, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0.25, poffset), 0, 0, Vector3.new(0, 0, 0), math.random(0.5, 2), "", 1, 1)
 rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoid, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0.25, poffset), 0, 0, Vector3.new(0, 0, 0), math.random(0.5, 2), "", 1, 1)
 rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoid, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0.25, poffset), 0, 0, Vector3.new(0, 0, 0), math.random(0.5, 2), "", 1, 1)
@@ -448,7 +448,7 @@ local gojo = false
 function infinity()
 gojo = true
 repeat
-wait()
+wait(0.05)
     for i,v in pairs(game.Workspace.Entities:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < 7 then
@@ -456,7 +456,7 @@ wait()
             end
         end
     end
-wait()
+wait(0.05)
     for i,v in pairs(game.Workspace.Entities:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < 4 then
@@ -638,7 +638,7 @@ function lapse()
     rs.Damage12Sans:FireServer(hum, hitbox1.CFrame, 0, 0, Vector3.new(0, 0, 0), blue, "", 1, 50)
     wait()
     end
-    for i = 1, 350 do
+    for i = 1, 250 do
     for i,v in pairs(game.Workspace.Entities:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (hitbox1.Position - v.HumanoidRootPart.Position).Magnitude < 100 then
