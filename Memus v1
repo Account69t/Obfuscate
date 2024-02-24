@@ -781,14 +781,7 @@ for i,v in pairs(game.Workspace.Entities:GetChildren()) do
         rs.Damage11:FireServer(hum, hrp.CFrame, 0, 0, Vector3.new(0, 0, 0), 999999999999999, "", 0, 0)
         wait()
     end
-    for i = 1,100 do
-    wait(0.5)
-    for i,v in pairs(game.Workspace.Entities:GetChildren()) do
-        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name == HumName then
-            rs.VampireRush:FireServer(v.Humanoid, v.HumanoidRootPart.CFrame, 2, 0.4, Vector3.new(), "rbxassetid://241837157", 0, Color3.new(10, 0, 10), "rbxassetid://", 0.8, 0)
-            end
-        end
-    end
+    wait(5)
     hrp.CFrame = OldPos
     wait(4)
     CDC = false
