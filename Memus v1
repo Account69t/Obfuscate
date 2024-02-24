@@ -416,7 +416,7 @@ rs.VampireRush:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Play
 rser.Heartbeat:wait()
 end
 for i = 1,45 do
-wait()
+wait(0.06)
 rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoid, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0.25, poffset), 0, 0, Vector3.new(0, 0, 0), math.random(0.5, 2), "", 1, 1)
 rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoid, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0.25, poffset), 0, 0, Vector3.new(0, 0, 0), math.random(0.5, 2), "", 1, 1)
 rs.ULFDamage:FireServer(game:GetService("Players").LocalPlayer.Character.Humanoid, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0.25, poffset), 0, 0, Vector3.new(0, 0, 0), math.random(0.5, 2), "", 1, 1)
